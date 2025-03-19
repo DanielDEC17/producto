@@ -2,7 +2,6 @@
   "env": {
     "VERCEL_ENV": "production"
   },
-  "distDir": "public",
   "installCommand": "curl -sS https://getcomposer.org/installer | php && php composer.phar install && npm install",
   "buildCommand": "npm run build"
 }
