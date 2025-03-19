@@ -1,0 +1,13 @@
+{
+  "build": {
+    "env": {
+      "VERCEL_ENV": "production"
+    },
+    "use": "@vercel/static-build",
+    "config": {
+      "distDir": "public",
+      "installCommand": "curl -sS https://getcomposer.org/installer | php && php composer.phar install && npm install",
+      "buildCommand": "npm run build"
+    }
+  }
+}
