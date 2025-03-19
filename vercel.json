@@ -1,5 +1,6 @@
 {
   "build": {
-    "output": "public/build"
+    "command": "composer install && npm install && npm run build",
+    "output": "public"
   }
 }
