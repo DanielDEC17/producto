@@ -1,7 +1,10 @@
 {
-  "env": {
-    "VERCEL_ENV": "production"
-  },
-  "installCommand": "curl -sS https://getcomposer.org/installer | php && php composer.phar install && npm install",
-  "buildCommand": "npm run build"
+  "build": {
+    "env": {
+      "VERCEL_ENV": "production"
+    },
+    "installCommand": "apt-get update && apt-get install -y php php-cli php-mbstring php-zip php-curl php-xml php-tokenizer && curl -sS https://getcomposer.org/installer | php && php composer.phar install && npm install",
+    "buildCommand": "npm run build",
+    "outputDirectory": "public"
+  }
 }
